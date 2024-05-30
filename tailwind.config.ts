@@ -22,7 +22,7 @@ const config = {
         "header-bg": "url('/medicappoint-bg.png')",
       },
       colors: {
-        "black-opacity-10": "rgba(0, 0, 0, 0.3)",
+        "black-opacity-10": "rgba(0, 0, 0, 0.5)",
         "black-opacity-5": "rgba(0, 0, 0, 0.05)",
         "black-opacity-1": "rgba(0, 0, 0, 0.01)",
         border: "hsl(var(--border))",

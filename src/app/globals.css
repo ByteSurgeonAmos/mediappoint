@@ -29,6 +29,9 @@
     .header-bg-opacity {
       position: relative;
     }
+    .header-bg-opacity-provider {
+      position: relative;
+    }
   
     .header-bg-opacity::before {
       padding: 0%;
@@ -39,6 +42,20 @@
       width: 100%;
       height: 100%;
       background-image: url('/mediappointbg.png');
+      background-size: cover;
+      background-position: center;
+      opacity: 1;
+      z-index: -1;
+    }
+    .header-bg-opacity-provider::before {
+      padding: 0%;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('/medic-bg-provider.jpg');
       background-size: cover;
       background-position: center;
       opacity: 1;
