@@ -4,7 +4,7 @@ import HowItWorks from "@/components/provider/HowItWorks";
 
 function page() {
   return (
-    <div>
+    <div className="page">
       <Header />
       <HowItWorks />
       <Footer />

@@ -1,6 +1,40 @@
-import React from "react";
+"use client";
+import { baseURL } from "@/constants/baseURL";
+import axios from "axios";
+import React, { useState } from "react";
+import { toast } from "sonner";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+
+    try {
+      const promise = axios.post(baseURL, {
+        email: email,
+        role: "provider",
+      });
+
+      toast.promise(promise, {
+        loading: "Joining waitlist...",
+        success: "Joined successfully!",
+        error: (error: any) => {
+          if(error.response.data.message){
+
+            return error.response.data.message 
+          }
+          return "Error joining the list";
+        },
+      });
+
+      const response = await promise;
+
+      console.log(response.data);
+    } catch (error) {
+      console.error("Error sending email:", error);
+    }
+  };
   return (
     <div>
       <div className="bg-[#3454D1] w-full h-[341px] flex flex-col justify-center items-center gap-4 p-[20px] max-md:w-screen">
@@ -16,10 +50,14 @@ const Footer = () => {
             type="email"
             name=""
             id=""
+            onChange={(e) => setEmail(e.target.value)}
             placeholder="Your email address"
             className="w-[239px] h-full indent-3 focus:outline-none"
           />
-          <button className="w-[148px] h-full text-white">
+          <button
+            className="w-[148px] h-full text-white"
+            onClick={handleSubmit}
+          >
             Join the waitlist
           </button>
         </div>

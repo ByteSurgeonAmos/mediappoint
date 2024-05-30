@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
   title: "Medic Appoint",
@@ -13,7 +14,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="overflow-x-hidden">{children}</body>
+      <body className="overflow-x-hidden">
+        <div>{children}</div>
+        <div>
+          <Toaster />
+        </div>
+      </body>
     </html>
   );
 }
