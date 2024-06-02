@@ -5,8 +5,8 @@ const HowItWorks = () => {
   return (
     <div className="pb-3">
       <div className="w-full sm:h-[400px] flex justify-center items-center max-md:flex-col max-md:h-max  max-md:w-screen">
-        <div className="w-[1000px] sm:h-[300px]  md-max:space-y-4 flex justify-between max-md:flex-col max-md:h-max max-md:w-max">
-          <div className=" sm:shadow-lg gap-4 h-full max-md:h-max   flex flex-col justify-center items-center">
+        <div className="w-full sm:h-[300px]  md-max:space-y-4 flex justify-around max-md:flex-col max-md:h-max max-md:w-max">
+          <div className=" sm:shadow-lg gap-4 rounded-[24px] h-full max-md:h-max   flex flex-col justify-center items-center">
             <div className="w-[182px]   flex justify-center items-center  max-md:w-screen ">
               <Image src="/doc.svg" alt="doc" width={100} height={150} />
             </div>
@@ -16,7 +16,7 @@ const HowItWorks = () => {
               location
             </div>
           </div>
-          <div className=" gap-4 h-full sm:shadow-lg  flex flex-col justify-center items-center">
+          <div className="rounded-[24px] gap-4 h-full sm:shadow-lg  flex flex-col justify-center items-center">
             <div className="w-[182px]   flex justify-center items-center ">
               <Image src="/plan.svg" alt="plan" width={100} height={150} />
             </div>
@@ -26,7 +26,7 @@ const HowItWorks = () => {
               Effortlessly book appointments at your convinience
             </div>
           </div>
-          <div className=" gap-4 h-full sm:shadow-lg  flex flex-col justify-center items-center">
+          <div className="rounded-[24px] gap-4 h-full sm:shadow-lg  flex flex-col justify-center items-center">
             <div className="w-[182px]   flex justify-center items-center ">
               <Image
                 src="/calendar.svg"

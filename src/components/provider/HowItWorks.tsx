@@ -5,8 +5,8 @@ const HowItWorks = () => {
   return (
     <div className="pb-3">
       <div className="w-full sm:h-[400px] flex justify-center items-center max-md:flex-col max-md:h-screen max-md:w-screen">
-        <div className="w-full sm:w-[1000px] sm:h-[300px] flex flex-col sm:flex-row justify-between max-md:space-y-4 sm:space-y-0 max-md:h-full max-md:w-screen">
-          <div className="sm:shadow-lg gap-4 h-full max-md:h-max flex flex-col justify-center items-center">
+        <div className="w-full  sm:h-[300px] flex flex-col sm:flex-row justify-around max-md:space-y-4 sm:space-y-0 max-md:h-full max-md:w-screen">
+          <div className="sm:shadow-lg rounded-[24px] gap-4 h-full max-md:h-max flex flex-col justify-center items-center">
             <div className="w-[182px] flex justify-center items-center max-md:w-full">
               <Image
                 src="/visibility.svg"
@@ -22,7 +22,7 @@ const HowItWorks = () => {
               Reach more patients by showcasing your services
             </div>
           </div>
-          <div className="gap-4 h-full sm:shadow-lg flex flex-col justify-center items-center">
+          <div className="gap-4 rounded-[24px] h-full sm:shadow-lg flex flex-col p-[1rem] justify-center items-center">
             <div className="w-[182px] flex justify-center items-center">
               <Image
                 src="/patients.svg"
@@ -39,7 +39,7 @@ const HowItWorks = () => {
               communications, and timely reminders.
             </div>
           </div>
-          <div className="gap-4 pt-2 h-full sm:shadow-lg flex flex-col justify-center items-center">
+          <div className="gap-4 rounded-[24px] pt-2 h-full sm:shadow-lg flex flex-col justify-center items-center">
             <div className="w-[182px] flex justify-center items-center">
               <Image
                 src="/efficiency.svg"

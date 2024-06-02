@@ -44,7 +44,7 @@ const Footer = () => {
           <p> Experience Our Revolutionary Healthcare Marketplace App </p>
           <p> All at no cost to you! </p>
         </div>
-        <div className="w-[387px] h-[49px] border mt-[1rem] flex">
+        <div className="w-[387px] h-[49px] border mt-[1rem] flex rounded-r-[16px]">
           <input
             type="email"
             name=""
@@ -54,7 +54,7 @@ const Footer = () => {
             className="w-[239px] h-full indent-3 focus:outline-none"
           />
           <button
-            className="w-[148px] h-full text-white"
+            className="w-[148px] h-full text-white "
             onClick={handleSubmit}
           >
             Join the waitlist

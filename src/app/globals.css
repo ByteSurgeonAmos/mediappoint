@@ -55,9 +55,42 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('/medic-bg-provider.jpg');
+      background-image: url('/medic-bg-provider2.jpg');
       background-size: cover;
       background-position: center;
       opacity: 1;
       z-index: -1;
     }
+
+        
+    
+        /* WebKit Browsers */
+        ::-webkit-scrollbar {
+          width: 2rem;
+        }
+    
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          width: 2rem;
+        }
+    
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          width: 2rem;
+        }
+    
+        ::-webkit-scrollbar-thumb:hover {
+          background: #555;
+          width: 2rem;
+        }
+    
+        ::-webkit-scrollbar-thumb:active {
+          background: #333;
+        }
+    
+        /* Firefox */
+        * {
+          /* scrollbar-width: thin; */
+          scrollbar-color: #888 #f1f1f1;
+          
+        }
