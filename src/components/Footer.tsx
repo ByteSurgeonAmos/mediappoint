@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
-  const [joined, setJoined] = useState(true);
+  const [joined, setJoined] = useState(false);
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
