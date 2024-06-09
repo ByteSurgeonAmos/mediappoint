@@ -3,10 +3,10 @@ import Image from "next/image";
 
 const HowItWorks = () => {
   return (
-    <div className="pb-3">
+    <div className="pb-3 bg-[#F0F5FB1A]">
       <div className="w-full sm:h-[400px] flex justify-center items-center flex-col sm:flex-row">
-        <div className="w-full flex flex-col sm:flex-row justify-around items-center space-y-4 sm:space-y-0 sm:space-x-4">
-          <div className="sm:shadow-lg shadow-md rounded-[24px] gap-4 h-full sm:h-[300px] flex flex-col justify-center items-center p-4">
+        <div className="w-full flex flex-col sm:flex-row justify-around items-center sm:space-x-4">
+          <div className="shadow-lg rounded-[24px] gap-4 h-full sm:h-[300px] flex flex-col justify-center items-center p-4 m-4 w-[90%] sm:w-[30%]">
             <div className="w-[182px] flex justify-center items-center">
               <Image
                 src="/visibility.svg"
@@ -22,7 +22,7 @@ const HowItWorks = () => {
               Reach more patients by showcasing your services
             </div>
           </div>
-          <div className="sm:shadow-lg shadow-md rounded-[24px] gap-4 h-full sm:h-[300px] flex flex-col justify-center items-center p-4">
+          <div className="shadow-lg rounded-[24px] gap-4 h-full sm:h-[300px] flex flex-col justify-center items-center p-4 m-4 w-[90%] sm:w-[30%]">
             <div className="w-[182px] flex justify-center items-center">
               <Image
                 src="/patients.svg"
@@ -39,7 +39,7 @@ const HowItWorks = () => {
               communications, and timely reminders.
             </div>
           </div>
-          <div className="sm:shadow-lg shadow-md rounded-[24px] gap-4 h-full sm:h-[300px] flex flex-col justify-center items-center p-4">
+          <div className="shadow-lg rounded-[24px] gap-4 h-full sm:h-[300px] flex flex-col justify-center items-center p-4 m-4 w-[90%] sm:w-[30%]">
             <div className="w-[182px] flex justify-center items-center">
               <Image
                 src="/efficiency.svg"

@@ -37,7 +37,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="relative w-full h-[341px]">
+    <div className="relative w-full h-[341px] " id="footer2">
       <motion.div
         className="absolute w-full h-full"
         initial={{ x: 0 }}
@@ -71,34 +71,36 @@ const Footer = () => {
         </div>
       </motion.div>
 
-      <motion.div
-        className="absolute w-full h-full"
-        initial={{ x: "100%" }}
-        animate={{ x: joined ? "0%" : "100%" }}
-        transition={{ type: "spring", stiffness: 300, damping: 30 }}
-      >
-        <div className="bg-[#3454D1] w-full h-full flex flex-col justify-center items-center gap-4 p-[20px]">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold mb-4 text-white">
-              Product Survey
-            </h1>
-            <div className="mb-6 text-white text-center text-wrap">
-              Could you please take a few minutes to participate in our product
-              survey?
-              <p>
-                Your feedback will help us better understand your needs and
-                tailor our solutions to meet them.
-              </p>
+      {joined && (
+        <motion.div
+          className="absolute w-full h-full"
+          initial={{ x: "100%" }}
+          animate={{ x: "0%" }}
+          transition={{ type: "spring", stiffness: 300, damping: 30 }}
+        >
+          <div className="bg-[#3454D1] w-full h-full flex flex-col justify-center items-center gap-4 p-[20px]">
+            <div className="text-center">
+              <h1 className="text-4xl font-bold mb-4 text-white">
+                Product Survey
+              </h1>
+              <div className="mb-6 text-white text-center text-wrap">
+                Could you please take a few minutes to participate in our
+                product survey?
+                <p>
+                  Your feedback will help us better understand your needs and
+                  tailor our solutions to meet them.
+                </p>
+              </div>
+              <a
+                href="#"
+                className="inline-block w-[224px] h-[49px] p-[15px] rounded-[12px] border border-[#EAEAEA]  text-white bg-[#3454D1]  hover:bg-blue-500 justify-center items-center  transition duration-300"
+              >
+                Survey Link
+              </a>
             </div>
-            <a
-              href="#"
-              className="inline-block w-[224px] h-[49px] p-[15px] rounded-[12px] border border-[#EAEAEA]  text-white bg-[#3454D1]  hover:bg-blue-500 justify-center items-center  transition duration-300"
-            >
-              Survey Link
-            </a>
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+      )}
     </div>
   );
 };

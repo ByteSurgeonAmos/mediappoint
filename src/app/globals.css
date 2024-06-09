@@ -25,7 +25,9 @@
   .header{
     padding: 1rem !important;
   }
-
+  .bottom-header{
+    margin-bottom: 3rem !important;
+  }
     .header-bg-opacity {
       position: relative;
     }
