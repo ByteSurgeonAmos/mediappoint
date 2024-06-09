@@ -93,7 +93,7 @@ const Footer = () => {
               </div>
               <a
                 href="#"
-                className="inline-block w-[224px] h-[49px] p-[15px] rounded-[12px] border border-[#EAEAEA]  text-white bg-[#3454D1]  hover:bg-blue-500 justify-center items-center  transition duration-300"
+                className="inline-block w-[224px]  p-[15px] rounded-[12px] border border-[#EAEAEA]  text-white bg-[#3454D1]  hover:bg-blue-500 justify-center items-center  transition duration-300"
               >
                 Survey Link
               </a>
