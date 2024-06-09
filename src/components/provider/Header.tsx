@@ -2,6 +2,12 @@
 import Image from "next/image";
 import Button from "../Button";
 import { useRouter, usePathname } from "next/navigation";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 function Header() {
   const router = useRouter();
@@ -14,24 +20,35 @@ function Header() {
         <Button text="Join Now " />
       </div>
       <div className="w-full h-[12px] flex justify-center items-center">
-        <div className="w-[25px] h-[10px] flex justify-between">
-          <div
-            className={`w-[10px] h-[10px] rounded-full border ${
-              pathname === "/" ? "bg-white" : ""
-            } cursor-pointer`}
-            onClick={() => router.push("/")}
-          ></div>
-          <div
-            className={`w-[10px] h-[10px] rounded-full border ${
-              pathname === "/provider" ? "bg-white" : ""
-            } cursor-pointer`}
-            onClick={() => router.push("/provider")}
-          ></div>
-        </div>
+        <TooltipProvider>
+          <Tooltip>
+            <div className="w-[25px] h-[10px] flex justify-between">
+              <TooltipTrigger>
+                <div
+                  className={`w-[10px] h-[10px] rounded-full border ${
+                    pathname === "/" ? "bg-white" : ""
+                  } cursor-pointer`}
+                  onClick={() => router.push("/")}
+                >
+                  <TooltipContent>
+                    <p className="text-white">Explore as a patient.</p>
+                  </TooltipContent>
+                </div>
+              </TooltipTrigger>
+
+              <div
+                className={`w-[10px] h-[10px] rounded-full border ${
+                  pathname === "/provider" ? "bg-white" : ""
+                } cursor-pointer`}
+                onClick={() => router.push("/provider")}
+              ></div>
+            </div>
+          </Tooltip>
+        </TooltipProvider>
       </div>
-      <div className="w-[1315px] h-[342px] max-md:w-screen">
-        <div className="w-[1315px] h-max center flex flex-col justify-center items-center max-md:w-screen">
-          <div className="w-[1115px] h-max max-md:text-2xl text-white text-balance text-center font-[700] pt-4 max-md:w-screen">
+      <div className="w-full h-[342px] max-md:w-screen">
+        <div className="w-full h-max center flex flex-col justify-center items-center max-md:w-screen">
+          <div className="w-full h-max max-md:text-2xl text-white text-balance text-center font-[700] pt-4 max-md:w-screen">
             <p className="sm:text-[64px]">Grow Your Practice with</p>
             <p className="sm:text-[64px]">MedicAppoint</p>
           </div>
@@ -45,11 +62,11 @@ function Header() {
           </button>
         </div>
       </div>
-      <div className="w-[1312px] h-max pt-[20px] flex flex-col items-center justify-center text-white max-md:w-screen">
+      <div className="w-full h-max pt-[20px] flex flex-col items-center justify-center text-white max-md:w-screen">
         <div className="w-full h-max font-[700] sm:text-[64px] max-md:text-2xl text-center flex items-center justify-center max-md:w-screen">
           What we do for you
         </div>
-        <div className="sm:w-[508px] text-[24px] h-max font-[400] sm:text-[16px] max-md:text-sm text-wrap text-center max-md:w-[90%] p-1">
+        <div className="w-full text-[24px] h-max font-[400] sm:text-[16px] max-md:text-sm text-wrap text-center max-md:w-[90%] p-1">
           MedicAppoint makes it easier for patients to find, book and return to
           your practice
         </div>

@@ -4,10 +4,10 @@ import Image from "next/image";
 const HowItWorks = () => {
   return (
     <div className="pb-3">
-      <div className="w-full sm:h-[400px] flex justify-center items-center max-md:flex-col max-md:h-screen max-md:w-screen">
-        <div className="w-full  sm:h-[300px] flex flex-col sm:flex-row justify-around max-md:space-y-4 sm:space-y-0 max-md:h-full max-md:w-screen">
-          <div className="sm:shadow-lg rounded-[24px] gap-4 h-full max-md:h-max flex flex-col justify-center items-center">
-            <div className="w-[182px] flex justify-center items-center max-md:w-full">
+      <div className="w-full sm:h-[400px] flex justify-center items-center flex-col sm:flex-row">
+        <div className="w-full flex flex-col sm:flex-row justify-around items-center space-y-4 sm:space-y-0 sm:space-x-4">
+          <div className="sm:shadow-lg shadow-md rounded-[24px] gap-4 h-full sm:h-[300px] flex flex-col justify-center items-center p-4">
+            <div className="w-[182px] flex justify-center items-center">
               <Image
                 src="/visibility.svg"
                 alt="visibility"
@@ -18,11 +18,11 @@ const HowItWorks = () => {
             <div className="font-bold text-[24px] text-center">
               Increased Visibility
             </div>
-            <div className="w-[308px] h-[38px] text-center text-[16px] text-wrap">
+            <div className="w-[308px] text-center text-[16px]">
               Reach more patients by showcasing your services
             </div>
           </div>
-          <div className="gap-4 rounded-[24px] h-full sm:shadow-lg flex flex-col p-[1rem] justify-center items-center">
+          <div className="sm:shadow-lg shadow-md rounded-[24px] gap-4 h-full sm:h-[300px] flex flex-col justify-center items-center p-4">
             <div className="w-[182px] flex justify-center items-center">
               <Image
                 src="/patients.svg"
@@ -34,12 +34,12 @@ const HowItWorks = () => {
             <div className="font-bold text-[24px] text-center">
               Enhanced Patient Engagement
             </div>
-            <div className="w-[308px] h-[38px] text-center text-[16px] text-wrap">
+            <div className="w-[308px] text-center text-[16px]">
               Improve patient satisfaction with easy scheduling options,
               communications, and timely reminders.
             </div>
           </div>
-          <div className="gap-4 rounded-[24px] pt-2 h-full sm:shadow-lg flex flex-col justify-center items-center">
+          <div className="sm:shadow-lg shadow-md rounded-[24px] gap-4 h-full sm:h-[300px] flex flex-col justify-center items-center p-4">
             <div className="w-[182px] flex justify-center items-center">
               <Image
                 src="/efficiency.svg"
@@ -51,7 +51,7 @@ const HowItWorks = () => {
             <div className="font-bold text-[24px] text-center">
               Efficient Scheduling
             </div>
-            <div className="w-[308px] h-[38px] text-center text-[16px] text-wrap">
+            <div className="w-[308px] text-center text-[16px]">
               Manage your appointments seamlessly with our intuitive platform
             </div>
           </div>

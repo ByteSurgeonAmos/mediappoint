@@ -1,15 +1,14 @@
 "use client";
 import Image from "next/image";
 import Button from "./Button";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "./ui/select";
-import { useRouter, usePathname } from "next/navigation";
 
+import { useRouter, usePathname } from "next/navigation";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 function Header() {
   const router = useRouter();
   const pathname = usePathname();
@@ -28,17 +27,27 @@ function Header() {
             } cursor-pointer border`}
             onClick={() => router.push("/")}
           ></div>
-          <div
-            className={`w-[10px] h-[10px] rounded-full ${
-              pathname === "/provider" ? "bg-white" : ""
-            } cursor-pointer border`}
-            onClick={() => router.push("/provider")}
-          ></div>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger>
+                <div
+                  className={`w-[10px] h-[10px] rounded-full ${
+                    pathname === "/provider" ? "bg-white" : ""
+                  } cursor-pointer border`}
+                  onClick={() => router.push("/provider")}
+                >
+                  <TooltipContent>
+                    <p className="text-white">Explore as a provider.</p>
+                  </TooltipContent>
+                </div>
+              </TooltipTrigger>
+            </Tooltip>
+          </TooltipProvider>
         </div>
       </div>
-      <div className="w-[1315px] h-[342px] max-md:w-screen">
-        <div className="w-[1315px] h-max center flex flex-col justify-center items-center max-md:w-screen">
-          <div className="w-[1115px] h-max max-md:text-2xl text-white text-balance text-center font-[700] pt-4 max-md:w-screen">
+      <div className="w-full h-[342px] max-md:w-screen">
+        <div className="w-full h-max center flex flex-col justify-center items-center max-md:w-screen">
+          <div className="w-full h-max max-md:text-2xl text-white text-balance text-center font-[700] pt-4 max-md:w-screen">
             <p className="sm:text-[64px]">Schedule your next Appointment</p>
             <p className="sm:text-[64px]">Hassle free</p>
           </div>
@@ -46,40 +55,15 @@ function Header() {
             Find and Book your favorite Healthcare Professional near you
           </div>
         </div>
-        <div className="w-full sm:h-[74px] max-md:items-center flex justify-evenly max-md:flex-col border-none rounded-[24px] items-center sm:bg-[#EAEAEA]">
-          <div className="w-[551.5px] h-[44px] max-md:w-screen max-md:mt-2 md-max:p-2 max-md:justify-center max-md:flex">
-            <Select>
-              <SelectTrigger className="w-[551.5px] border border-white font-semibold max-md:w-[80%] md-max:p-2">
-                <SelectValue placeholder="Select a speciality" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="today">1</SelectItem>
-                <SelectItem value="week">2</SelectItem>
-                <SelectItem value="month">3</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
-          <div className="w-[551.5px] h-[44px] max-md:mt-2 max-md:w-screen md-max:p-2 max-md:justify-center max-md:flex">
-            <Select>
-              <SelectTrigger className="w-[551.5px] border border-white font-semibold max-md:w-[80%]">
-                <SelectValue placeholder="Location" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="today">1</SelectItem>
-                <SelectItem value="week">2</SelectItem>
-                <SelectItem value="month">3</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
-          <div className="w-fit max-md:hidden">
-            <Image src="/vector.svg" alt="filter" width={39} height={33} />
-          </div>
-          <button className="max-md:mt-2 sm:w-[104px] sm:h-[44px] bg-[#3454D1] text-white max-md:w-[8rem] max-md:p-2">
-            Search
+      </div>
+      <div className="">
+        <div className="w-full h-max flex justify-center items-center p-2">
+          <button className="w-[424px] h-[72px] p-[15px] text-[16px] text-white flex justify-center items-center bg-[#3454D1] hover:bg-blue-500 rounded-[12px]">
+            Join the waitlist
           </button>
         </div>
       </div>
-      <div className="w-[1312px] h-[136px] pt-[20px] flex flex-col items-center justify-center text-white max-md:w-screen">
+      <div className="w-full h-[136px] pt-[20px] flex flex-col items-center justify-center text-white max-md:w-screen">
         <div className="w-[425px] sm:h-[77px] font-semibold sm:text-[64px] max-md:text-2xl text-center flex items-center justify-center max-md:w-screen">
           Easy as 1-2-3
         </div>
