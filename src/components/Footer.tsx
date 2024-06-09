@@ -8,9 +8,11 @@ import { motion } from "framer-motion";
 const Footer = () => {
   const [email, setEmail] = useState("");
   const [joined, setJoined] = useState(false);
+  const [disabled, setDisabled] = useState(false);
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
+    setDisabled(true);
 
     try {
       const promise = axios.post(baseURL, {
@@ -30,9 +32,11 @@ const Footer = () => {
       });
 
       await promise;
+      setDisabled(false)
       setJoined(true);
     } catch (error) {
       console.error("Error sending email:", error);
+      setDisabled(false)
     }
   };
 
@@ -63,6 +67,7 @@ const Footer = () => {
             />
             <button
               className="sm:w-[148px] h-full text-white "
+              disabled={disabled}
               onClick={handleSubmit}
             >
               Join the waitlist
