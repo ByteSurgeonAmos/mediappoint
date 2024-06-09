@@ -52,17 +52,17 @@ const Footer = () => {
             <p> Experience Our Revolutionary Healthcare Marketplace App </p>
             <p> All at no cost to you! </p>
           </div>
-          <div className="h-[49px] border mt-[1rem] flex rounded-r-[16px]">
+          <div className="h-[49px] border mt-[1rem] flex rounded-r-[16px] ">
             <input
               type="email"
               name=""
               id=""
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Your email address"
-              className="w-[239px] h-full indent-3 focus:outline-none"
+              className="sm:w-[239px] h-full indent-3 focus:outline-none"
             />
             <button
-              className="w-[148px] h-full text-white "
+              className="sm:w-[148px] h-full text-white "
               onClick={handleSubmit}
             >
               Join the waitlist

@@ -59,10 +59,10 @@ const Footer = () => {
               id=""
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Your email address"
-              className="w-[239px] h-full indent-3 focus:outline-none"
+              className="sm:w-[239px] h-full indent-3 focus:outline-none"
             />
             <button
-              className="w-[148px] h-full text-white "
+              className="sm:w-[148px] h-full text-white "
               onClick={handleSubmit}
             >
               Join the waitlist
