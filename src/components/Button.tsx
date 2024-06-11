@@ -7,7 +7,7 @@ const Button = ({
 }) => {
   return (
     <button
-      className="bg-[#3454D1] hover:bg-blue-700 text-white font-bold button rounded-[12px]"
+      className="bg-[#098CE9] hover:bg-blue-700 text-white font-bold button rounded-[12px]"
       onClick={handleScrollToView}
     >
       {text}

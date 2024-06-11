@@ -62,7 +62,7 @@ function Header() {
         <div className="w-full  flex justify-center items-center p-2">
           <button
             onClick={handleJoinNowClick}
-            className="w-[424px] h-[50px]  font-semibold p-[15px] text-[16px] text-white flex justify-center items-center bg-[#3454D1] hover:bg-blue-500 rounded-[12px]"
+            className="w-[424px] h-[50px]  font-semibold p-[15px] text-[16px] text-white flex justify-center items-center bg-[#098CE9] hover:bg-blue-500 rounded-[12px]"
           >
             Join the waitlist
           </button>

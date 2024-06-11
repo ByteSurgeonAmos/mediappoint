@@ -47,12 +47,12 @@ const Footer = () => {
         animate={{ x: joined ? "-100%" : "0%" }}
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
       >
-        <div className="bg-[#3454D1] w-full h-full flex flex-col justify-center items-center gap-4 p-[20px]">
+        <div className="bg-[#098CE9] w-full h-full flex flex-col justify-center items-center gap-4 p-[20px]">
           <div className="font-bold text-4xl text-center text-white bg-none flex justify-center items-center w-full h-[77px] mt-[2rem]">
             We are Launching Soon!
           </div>
           <div className="text-center text-sm text-wrap text-white">
-            <p> Experience Our Revolutionary Healthcare Marketplace App </p>
+            <p> Experience Our Revolutionary Healthcare Platform </p>
             <p> All at no cost to you! </p>
           </div>
           <div className="h-[49px] border mt-[1rem] flex rounded-r-[16px]">
@@ -82,7 +82,7 @@ const Footer = () => {
           animate={{ x: "0%" }}
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
         >
-          <div className="bg-[#3454D1] w-full h-full flex flex-col justify-center items-center gap-4 p-[20px]">
+          <div className="bg-[#098CE9] w-full h-full flex flex-col justify-center items-center gap-4 p-[20px]">
             <div className="text-center">
               <h1 className="text-4xl font-bold mb-4 text-white">
                 Product Survey
