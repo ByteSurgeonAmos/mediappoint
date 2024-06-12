@@ -3,7 +3,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
-  title: "Medic Appoint",
+  title: "Medappoint",
   description: "Book an appointment online with a doctor near you.",
 };
 

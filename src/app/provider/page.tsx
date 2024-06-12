@@ -4,7 +4,7 @@ import HowItWorks from "@/components/provider/HowItWorks";
 
 function page() {
   return (
-    <div className="page">
+    <div className="page overflow-x-hidden">
       <Header />
       <HowItWorks />
       <Footer />
