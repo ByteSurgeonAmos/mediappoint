@@ -18,7 +18,7 @@ function Header() {
   return (
     <div className="pb-[2rem] header-bg-opacity bg-cover bg-center header bg-black-opacity-10 space-y-3 flex flex-col max-md:w-screen">
       <div className="flex justify-between h-[50px]">
-        <Image src="/3.png" alt="mediappointlogo" height={50} width={100} />
+        <Image src="/4.png" alt="mediappointlogo" height={150} width={150} />
         <Button text="Join Now " handleScrollToView={handleJoinNowClick} />
       </div>
       <div className="w-full h-[12px] flex justify-center items-center">
@@ -62,7 +62,7 @@ function Header() {
         <div className="w-full  flex justify-center items-center p-2">
           <button
             onClick={handleJoinNowClick}
-            className="w-[424px] h-[50px]  font-semibold p-[15px] text-[16px] text-white flex justify-center items-center bg-[#098CE9] hover:bg-blue-500 rounded-[12px]"
+            className="w-[424px] h-[50px] max-md:w-[212px] font-semibold p-[15px] text-[16px] text-white flex justify-center items-center bg-[#098CE9] hover:bg-blue-500 rounded-[12px]"
           >
             Join the waitlist
           </button>
