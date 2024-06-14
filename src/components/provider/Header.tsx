@@ -55,7 +55,7 @@ function Header() {
             <p className="sm:text-[64px]">Grow Your Practice with</p>
             <p className="sm:text-[64px]">Medappoint</p>
           </div>
-          <div className="w-full  sm:text-[24px] text-center text-white max-md:w-screen">
+          <div className="w-full  sm:text-[24px] text-center text-white max-md:w-full">
             Join Our Network of Trusted Healthcare Providers
           </div>
         </div>
@@ -74,7 +74,7 @@ function Header() {
         <div className="w-full h-max font-[700] sm:text-[64px] max-md:text-2xl text-center flex items-center justify-center max-md:w-screen">
           What we do for you
         </div>
-        <div className="w-full text-[24px] h-max font-[400] sm:text-[16px] max-md:text-sm text-wrap text-center max-md:w-[90%] p-1">
+        <div className="w-full text-[24px] h-max font-[400] sm:text-[16px] max-md:text-sm text-wrap text-center  p-1">
           Medappoint makes it easier for patients to find, book and return to
           your practice
         </div>

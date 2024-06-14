@@ -72,7 +72,7 @@ function Header() {
         <div className="w-[425px] sm:h-[77px] font-semibold sm:text-[64px] max-md:text-2xl text-center flex items-center justify-center max-md:w-screen">
           Easy as 1-2-3
         </div>
-        <div className="sm:w-[508px] bottom-header sm:h-[38px] font-[400] sm:text-[16px] max-md:text-sm text-wrap text-center max-md:w-[90%] p-1">
+        <div className="sm:w-[508px] bottom-header max-md:w-full sm:h-[38px] font-[400] sm:text-[16px] max-md:text-sm text-wrap text-center  p-1">
           Discover, book and experience personalized healthcare effortlessly
           with our user-friendly Doctor Appointment Website
         </div>

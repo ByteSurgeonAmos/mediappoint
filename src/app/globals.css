@@ -23,7 +23,7 @@
   }
 
   .header{
-    padding: 1rem !important;
+    padding-top: 1rem !important;
   }
   .bottom-header{
     margin-bottom: 3rem !important;
@@ -34,7 +34,9 @@
     .header-bg-opacity-provider {
       position: relative;
     }
-  
+    .btn-padding{
+      margin-right: 1rem !important;
+    }
     .header-bg-opacity::before {
       padding: 0%;
       content: "";
