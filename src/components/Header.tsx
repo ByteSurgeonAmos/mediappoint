@@ -17,9 +17,19 @@ function Header() {
   };
   return (
     <div className="pb-[2rem] header-bg-opacity bg-cover bg-center header bg-black-opacity-10 space-y-3 flex flex-col max-md:w-screen">
-      <div className="flex justify-between h-[50px]">
-        <Image src="/4.png" alt="mediappointlogo" height={150} width={150} />
-        <Button text="Join Now " handleScrollToView={handleJoinNowClick} />
+      <div className="flex justify-between h-fit">
+        <div className="h-full">
+          <Image
+            src="/4.png"
+            alt="mediappointlogo"
+            width={200}
+            height={200}
+            className=""
+          />
+        </div>
+        <div className="h-[50px]">
+          <Button text="Join Now " handleScrollToView={handleJoinNowClick} />
+        </div>
       </div>
       <div className="w-full h-[12px] flex justify-center items-center">
         <div className="w-[25px] h-[10px] flex justify-between">
