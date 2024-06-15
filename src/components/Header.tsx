@@ -22,8 +22,8 @@ function Header() {
           <Image
             src="/4.png"
             alt="mediappointlogo"
-            width={200}
-            height={200}
+            width={100}
+            height={100}
             className=""
           />
         </div>

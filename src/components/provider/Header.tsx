@@ -18,17 +18,17 @@ function Header() {
 
   return (
     <div className="pb-[2rem] header-bg-opacity-provider bg-cover bg-center header h-max bg-black-opacity-10 space-y-3 flex flex-col max-md:w-screen">
-      <div className="flex justify-between h-fit">
+      <div className="flex justify-between h-fit  items-center">
         <div className="h-full">
           <Image
             src="/4.png"
             alt="mediappointlogo"
-            width={200}
-            height={200}
+            width={100}
+            height={100}
             className=""
           />
         </div>
-        <div className="h-[50px]">
+        <div className="h-[50px] ">
           <Button text="Join Now " handleScrollToView={handleJoinNowClick} />
         </div>
       </div>
