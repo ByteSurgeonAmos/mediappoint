@@ -17,10 +17,10 @@ function Header() {
   };
   return (
     <div className="pb-[2rem] header-bg-opacity bg-cover bg-center header bg-black-opacity-10 space-y-3 flex flex-col max-md:w-screen">
-      <div className="flex justify-between h-fit items-center">
-        <div className="h-full">
+      <div className="flex justify-between h-fit ">
+        <div className="h-full ml-3">
           <Image
-            src="/4.png"
+            src="/medAppoint.png"
             alt="mediappointlogo"
             width={100}
             height={100}

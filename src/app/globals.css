@@ -45,9 +45,10 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('/mediappointbg.png');
+      background-image: url('/mediappointbg.png'),url('/BackgroundLoader1.png');
       background-size: cover;
       background-position: center;
+      transition: background-image 0.5s ease-in-out;
       opacity: 1;
       z-index: -1;
     }
@@ -59,8 +60,9 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('/medic-bg-provider2.jpg');
+      background-image: url('/medic-bg-provider2.jpg'), url('/BackgroundLoader2.png');
       background-size: cover;
+      transition: background-image 0.5s ease-in-out;
       background-position: center;
       opacity: 1;
       z-index: -1;
