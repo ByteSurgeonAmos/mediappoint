@@ -28,8 +28,16 @@ function Header() {
             className=""
           />
         </div>
-        <div className="h-[50px] ">
-          <Button text="Join Now " handleScrollToView={handleJoinNowClick} />
+        <div className="w-1/3  gap-4 flex justify-between h-full">
+          <div
+            className="text-white my-auto flex font-semibold cursor-pointer "
+            onClick={() => router.push("/")}
+          >
+            Want to book appointment?
+          </div>
+          <div className="h-[50px]">
+            <Button text="Join Now " handleScrollToView={handleJoinNowClick} />
+          </div>
         </div>
       </div>
       <div className="w-full h-[12px] flex justify-center items-center">

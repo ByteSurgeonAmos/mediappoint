@@ -17,7 +17,7 @@ function Header() {
   };
   return (
     <div className="pb-[2rem] header-bg-opacity bg-cover bg-center header bg-black-opacity-10 space-y-3 flex flex-col max-md:w-screen">
-      <div className="flex justify-between h-fit ">
+      <div className="flex justify-between h-fit  ">
         <div className="h-full ml-3">
           <Image
             src="/medAppoint.png"
@@ -27,8 +27,16 @@ function Header() {
             className=""
           />
         </div>
-        <div className="h-[50px]">
-          <Button text="Join Now " handleScrollToView={handleJoinNowClick} />
+        <div className="w-1/3  gap-4 flex justify-between h-full">
+          <div
+            className="text-white my-auto flex font-semibold cursor-pointer "
+            onClick={() => router.push("/provider")}
+          >
+            Health practitioners?
+          </div>
+          <div className="h-[50px]">
+            <Button text="Join Now " handleScrollToView={handleJoinNowClick} />
+          </div>
         </div>
       </div>
       <div className="w-full h-[12px] flex justify-center items-center">
