@@ -35,7 +35,7 @@ function Header() {
           >
             Want to book appointment?
           </div>
-          <div className="h-[50px]">
+          <div className="h-[50px] max-md:hidden">
             <Button text="Join Now " handleScrollToView={handleJoinNowClick} />
           </div>
         </div>

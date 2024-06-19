@@ -20,7 +20,7 @@ function Header() {
       <div className="flex justify-between h-fit  ">
         <div className="h-full ml-3">
           <Image
-            src="/medAppoint.png"
+            src="/MedAppoint.png"
             alt="mediappointlogo"
             width={100}
             height={100}
@@ -34,7 +34,7 @@ function Header() {
           >
             Health practitioners?
           </div>
-          <div className="h-[50px]">
+          <div className="h-[50px] max-md:hidden">
             <Button text="Join Now " handleScrollToView={handleJoinNowClick} />
           </div>
         </div>
