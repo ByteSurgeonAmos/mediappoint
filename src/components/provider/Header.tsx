@@ -30,7 +30,7 @@ function Header() {
         </div>
         <div className="w-1/3  gap-4 flex justify-between h-full">
           <button
-            className="text-white my-auto flex font-semibold cursor-pointer "
+            className="bg-[#098CE9] hover:bg-blue-700 btn-padding text-white font-bold button rounded-[12px]"
             onClick={() => router.push("/")}
           >
             Want to book appointment?
