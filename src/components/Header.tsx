@@ -27,7 +27,7 @@ function Header() {
             className=""
           />
         </div>
-        <div className="w-3/5 sm:w-[40%] xl:w-[35%] flex items-center justify-between h-full">
+        <div className="w-[40%] xl:w-[35%] flex items-center justify-between h-full">
           <button
             className=" text-white text-xs font-bold"
             onClick={() => router.push("/provider")}
