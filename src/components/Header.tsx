@@ -16,9 +16,9 @@ function Header() {
     document.getElementById("footer1")?.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div className="pb-[2rem] header-bg-opacity bg-cover bg-center header bg-black-opacity-10 flex flex-col gap-8 max-md:w-screen">
-      <div className="flex items-center justify-between h-fit mx-4">
-        <div className="h-full mt-4 ml-4">
+    <div className="pb-[2rem] header-bg-opacity text-xs bg-cover bg-center header bg-black-opacity-10 flex flex-col gap-8 max-md:w-screen">
+      <div className="flex items-center justify-between h-fit mx-1 md:mx-2 lg:mx-4">
+        <div className="h-full mt-4 ml-1 md:2 lg:ml-4">
           <Image
             src="/MedAppointBlue.png"
             alt="mediappointlogo"
@@ -27,9 +27,9 @@ function Header() {
             className=""
           />
         </div>
-        <div className="w-[35%] flex justify-between h-full">
+        <div className="w-3/5 sm:w-[40%] xl:w-[35%] flex items-center justify-between h-full">
           <button
-            className=" text-white font-bold rounded-[12px]"
+            className=" text-white text-xs font-bold"
             onClick={() => router.push("/provider")}
           >
             For Health Practitioners
