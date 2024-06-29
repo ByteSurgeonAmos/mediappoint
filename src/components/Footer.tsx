@@ -41,32 +41,32 @@ const Footer = () => {
   };
 
   return (
-    <div className="relative w-full h-[341px]" id="footer1">
+    <div className="relative w-full" id="footer1">
       <motion.div
         className="absolute w-full h-full"
         initial={{ x: 0 }}
         animate={{ x: joined ? "-100%" : "0%" }}
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
       >
-        <div className="bg-[#098CE9] w-full h-full flex flex-col justify-center items-center gap-4 p-[20px]">
-          <div className="font-bold text-4xl text-center text-white bg-none flex justify-center items-center w-full h-[77px] mt-[2rem]">
+        <div className="bg-[#098CE9] w-full py-3 pb-6 flex flex-col justify-center items-center gap-3">
+          <div className="font-bold text-6xl text-center text-white flex justify-center items-center w-full mt-[1rem]">
             We are Launching Soon!
           </div>
-          <div className="text-center text-sm text-wrap text-white">
+          <div className="text-center text-sm text-white">
             <p> Experience Our Revolutionary Healthcare Platform </p>
             <p> All at no cost to you! </p>
           </div>
-          <div className="h-[49px] border mt-[1rem] flex rounded-r-[16px] ">
+          <div className="h-[49px] border mt-[1rem] flex rounded-l-xl rounded-r-xl ">
             <input
               type="email"
               name=""
               id=""
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Your email address"
-              className="sm:w-[239px] h-full indent-3 focus:outline-none"
+              className="sm:w-[239px] h-full rounded-l-xl text-[#484848] indent-3 focus:outline-none"
             />
             <button
-              className="sm:w-[148px] h-full text-white "
+              className="px-5 h-full text-white font-medium rounded-r-xl hover:bg-[#0A74C8]"
               disabled={disabled}
               onClick={handleSubmit}
             >
@@ -83,24 +83,21 @@ const Footer = () => {
           animate={{ x: "0%" }}
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
         >
-          <div className="bg-[#098CE9] w-full h-full flex flex-col justify-center items-center gap-4 p-[20px]">
-            <div className="text-center">
-              <h1 className="text-4xl font-bold mb-4 text-white">
-                Product Survey
-              </h1>
-              <div className="mb-6 text-white text-center text-wrap">
-                Could you please take a few minutes to participate in our
-                product survey?
-                <p>
-                  Your feedback will help us better understand your needs and
-                  tailor our solutions to meet them.
-                </p>
-              </div>
-              <a
-                href="#"
-                className="inline-block w-[224px]  p-[15px] rounded-[12px] border border-[#EAEAEA]  text-white bg-[#3454D1]  hover:bg-blue-500 justify-center items-center  transition duration-300"
-              >
-                Survey Link
+          <div className="bg-[#098CE9] w-full py-3 pb-6 flex flex-col justify-center items-center gap-3">
+            <div className="font-bold text-6xl text-center text-white flex justify-center items-center w-full mt-[1rem]">
+              Product Survey!
+            </div>
+            <div className="text-center text-sm text-white">
+              <p className="font-bold text-xl">We Value Your Feedback! </p>
+              <p>Please take a few minutes to complete our product survey.</p>
+              <p>Your insights will help us tailor our solutions </p>
+              <p>To better meet your needs.</p>
+            </div>
+            <div className="mt-[1rem]">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5nLevZaNQ0WpFrMVsSPwChbT_GguRyIeJSkhJlz-Kg6MloA/viewform">
+                <button className="bg-[#098CE9] hover:bg-[#0A74C8] border p-6 px-14 font-bold h-11 rounded-xl text-white flex items-center justify-center">
+                  Survey Link
+                </button>
               </a>
             </div>
           </div>

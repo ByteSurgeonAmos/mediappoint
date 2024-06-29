@@ -17,30 +17,28 @@ function Header() {
   };
 
   return (
-    <div className="pb-[2rem] header-bg-opacity-provider bg-cover bg-center header h-max bg-black-opacity-10 space-y-3 flex flex-col max-md:w-screen">
-      <div className="flex justify-between h-fit  ">
-        <div className="h-full ml-3">
+    <div className="pb-[2rem] header-bg-opacity bg-cover bg-center header bg-black-opacity-10 flex flex-col gap-8  max-md:w-screen">
+      <div className="flex items-center justify-between h-fit mx-4">
+        <div className="h-full mt-4 ml-4">
           <Image
-            src="/MedAppoint.png"
+            src="/MedAppointBlue.png"
             alt="mediappointlogo"
             width={100}
             height={100}
             className=""
           />
         </div>
-        <div className="w-1/3  gap-4 flex justify-between h-full">
+        <div className="w-[35%] flex justify-between h-full">
           <button
-            className="bg-[#098CE9] hover:bg-blue-700 btn-padding text-white font-bold button rounded-[12px]"
+            className="text-white font-bold rounded-[12px]"
             onClick={() => router.push("/")}
           >
-            Want to book appointment?
+            For Medical Appointments
           </button>
-          <div className="h-[50px] max-md:hidden">
-            <Button text="Join Now " handleScrollToView={handleJoinNowClick} />
-          </div>
+          <Button text="Join Now " handleScrollToView={handleJoinNowClick} />
         </div>
       </div>
-      <div className="w-full h-[12px] flex justify-center items-center">
+      <div className="absolute top-20 w-full h-[12px] flex justify-center items-center">
         <TooltipProvider>
           <Tooltip>
             <div className="w-[25px] h-[10px] flex justify-between">
@@ -67,38 +65,35 @@ function Header() {
           </Tooltip>
         </TooltipProvider>
       </div>
-      <div className="w-full  max-md:w-screen">
-        <div className="w-full  center flex flex-col justify-center items-center max-md:w-screen">
-          <div className="w-full  max-md:text-2xl text-white text-balance text-center font-[700] pt-4 max-md:w-screen">
-            <p className="sm:text-[64px]">Grow Your Practice with</p>
-            <p className="sm:text-[64px]">Med Appoint</p>
-          </div>
-          <div className="w-full  sm:text-[24px] text-center text-white max-md:w-full">
-            Join Our Network of Trusted Healthcare Providers
-          </div>
+      <div className="w-full h-max center flex flex-col justify-center gap-3 items-center max-md:w-screen">
+        <div className="w-full h-max max-md:text-2xl leading-tight text-white text-balance text-center font-bold pt-4 max-md:w-screen">
+          <p className="sm:text-6xl">Grow Your Pracitce with 
+            <br/>
+            Med-Appoint
+          </p>
         </div>
-        <div className="">
-          <div className="w-full  flex justify-center items-center p-2">
-            <button
-              onClick={handleJoinNowClick}
-              className="w-[424px] h-[50px] max-md:w-[212px] font-semibold p-[15px] text-[16px] text-white flex justify-center items-center bg-[#098CE9] hover:bg-blue-500 rounded-[12px]"
-            >
-              Join the waitlist
-            </button>
-          </div>
+        <div className="w-[713px]  sm:text-lg font-400 text-center text-white max-md:w-screen">
+          Join Our Network of Trusted Healthcare Providers
         </div>
       </div>
-      <div className="w-full h-max pt-[20px] flex flex-col items-center justify-center text-white max-md:w-screen">
-        <div className="w-full h-max font-[700] sm:text-[64px] max-md:text-2xl text-center flex items-center justify-center max-md:w-screen">
-          What we do for you
-        </div>
-        <div className="w-full text-[24px] h-max font-[400] sm:text-[16px] max-md:text-sm text-wrap text-center  p-1">
-          Med Appoint makes it easier for patients to find, book and return to
-          your practice
+      <div className="">
+        <div className="w-full  flex justify-center items-center p-2">
+          <button
+            onClick={handleJoinNowClick}
+            className="w-[315px] h-[50px] max-md:w-[212px] font-semibold p-[15px] text-[16px] text-white flex justify-center items-center bg-[#098CE9] hover:bg-[#0A74C8] rounded-xl"
+          >
+            Join the waitlist
+          </button>
         </div>
       </div>
-      <div className="w-full  h-max sm:text-[64px] text-center text-white font-[700]">
-        Key Features
+      <div className="*:w-full h-[136px] pt-[20px] flex flex-col items-center justify-center text-white max-md:w-screen">
+        <div className="sm:h-[77px] font-bold sm:text-6xl max-md:text-2xl text-center flex items-center justify-center max-md:w-screen">
+          Key Features
+        </div>
+        <div className="sm:w-1/2 bottom-header max-md:w-full sm:h-[38px] sm:text-lg max-md:text-xs text-center pt-2">
+          Med Appoint makes it easier for patients to,
+          <br/>Find and Book appointments with you. 
+        </div>
       </div>
     </div>
   );
