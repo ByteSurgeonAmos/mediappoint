@@ -19,8 +19,8 @@ function Header() {
 
   return (
     <div className="header-bg-opacity text-xs bg-cover bg-center pt-2 bg-black-opacity-10 flex flex-col gap-6 max-md:w-screen">
-      <div className="flex items-center justify-between h-fit mx-4">
-        <div className="h-full mt-4 ml-4">
+      <div className="flex items-center justify-between h-fit mx-1 md:mx-2 lg:mx-4">
+        <div className="h-full mt-3 ml-1 md:ml-2 lg:ml-4">
           <Image
             src="/MedAppointBlue.png"
             alt="mediappointlogo"
@@ -29,9 +29,9 @@ function Header() {
             className=""
           />
         </div>
-        <div className="w-[35%] flex justify-between h-full">
+        <div className="w-4/5 flex items-center justify-end gap-4 md:gap-8 lg:gap-16 h-full">
           <button
-            className="text-white font-bold rounded-[12px]"
+            className="text-white text-xs sm:text-sm md:text-base font-semibold lg:font-bold"
             onClick={() => router.push("/")}
           >
             For Medical Appointments
@@ -66,34 +66,40 @@ function Header() {
           </Tooltip>
         </TooltipProvider>
       </div>
-      <div className="w-full h-max center flex flex-col justify-center gap-3 items-center max-md:w-screen">
-        <div className="w-full h-max max-md:text-2xl leading-tight text-white text-balance text-center font-bold pt-4 max-md:w-screen">
-          <p className="sm:text-6xl">Grow Your Pracitce with 
+      <div className="w-full max-md:w-screen">
+        <div className="w-full h-max center flex flex-col justify-center items-center max-md:w-screen">
+          <div className="w-full h-max text-white text-balance text-center font-bold pt-4 max-md:w-screen">
+            <p className="text-2xl sm:text-4xl xl:text-6xl">Grow Your Pracitce with 
             <br/>
             Med-Appoint
-          </p>
-        </div>
-        <div className="w-[713px]  sm:text-lg font-400 text-center text-white max-md:w-screen">
-          Join Our Network of Trusted Healthcare Providers
+            </p>
+          </div>
+          <div className="w-[713px] xl:text-lg font-400 text-center text-white max-md:w-screen pt-2">
+            Join Our Network of Trusted Healthcare Providers
+          </div>
         </div>
       </div>
       <div className="">
         <div className="w-full  flex justify-center items-center p-2">
           <button
             onClick={handleJoinNowClick}
-            className="w-[315px] h-[50px] max-md:w-[212px] font-semibold p-[15px] text-[16px] text-white flex justify-center items-center bg-[#098CE9] hover:bg-[#0A74C8] rounded-xl"
+            className="bg-[#098CE9] hover:bg-[#0A74C8] px-8 text-xs sm:px-16 lg:px-20 sm:text-sm md:text-base font-semibold lg:font-bold  h-8 sm:h-10 md:h-12 rounded-[8px] lg:rounded-xl text-white"
           >
             Join the waitlist
           </button>
         </div>
       </div>
-      <div className="*:w-full h-[136px] pt-[20px] flex flex-col items-center justify-center text-white max-md:w-screen">
-        <div className="sm:h-[77px] font-bold sm:text-6xl max-md:text-2xl text-center flex items-center justify-center max-md:w-screen">
-          Key Features
-        </div>
-        <div className="sm:w-1/2 bottom-header max-md:w-full sm:h-[38px] sm:text-lg max-md:text-xs text-center pt-2">
-          Med Appoint makes it easier for patients to,
-          <br/>Find and Book appointments with you. 
+      <div className="w-full max-md:w-screen">
+        <div className="w-full h-max center flex flex-col justify-center items-center max-md:w-screen">
+          <div className="w-full h-max text-white text-balance text-center font-bold pt-4 max-md:w-screen">
+            <p className="text-2xl sm:text-4xl xl:text-6xl">
+              Key Features
+            </p>
+          </div>
+          <div className="w-[713px] xl:text-lg font-400 text-center text-white max-md:w-screen pt-2">
+            Med Appoint makes it easier for patients to,
+            <br/>Find and Book appointments with you. 
+          </div>
         </div>
       </div>
     </div>
