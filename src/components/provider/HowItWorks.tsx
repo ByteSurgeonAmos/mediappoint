@@ -24,19 +24,16 @@ const features = [
 
 const HowItWorks = () => {
   return (
-    <div className="pb-3 pt-2 bg-[#F0F5FB1A]">
-      <div className="w-full flex justify-center items-center flex-col sm:flex-row">
-        <div className="w-full flex flex-col sm:flex-row justify-around items-center sm:space-x-4">
+    <div className="pb-3 py-4">
+      <div className="w-full flex justify-between items-center flex-col lg:flex-row">
+        <div className="py-8 px-4 lg:px-8 *:h-full flex flex-col gap-5 lg:flex-row justify-between items-center w-full">
           {features.map((feature, index) => (
-            <div
-              key={index}
-              className="shadow-lg rounded-[24px] flex flex-col justify-center items-center p-4 m-4 mt-0  w-[90%] sm:w-[30%] h-[300px]"
-            >
-              <div className="w-[182px] flex justify-center items-center h-[150px]">
+            <div key={index} className="shadow-lg rounded-xl flex flex-col justify-center lg:justify-between items-center text-center px-8 w-full sm:w-3/4 md:w-1/2 pt-8 pb-8 lg:pb-12">
+              <div className="w-[182px] h-[120px] flex justify-center items-center">
                 <Image src={feature.src} alt={feature.alt} width={100} height={150} />
               </div>
-              <div className="font-bold text-[24px] text-center">{feature.title}</div>
-              <div className="w-[308px] text-center text-[16px]">{feature.description}</div>
+              <div className="font-bold text-base lg:text-xl text-[#242424] w-full">{feature.title}</div>
+              <div className="text-center text-xs lg:text-base text-[#484848] lg:pt-2 h-10 sm:w-1/2 lg:w-full">{feature.description}</div>
             </div>
           ))}
         </div>
@@ -44,5 +41,6 @@ const HowItWorks = () => {
     </div>
   );
 };
+
 
 export default HowItWorks;
