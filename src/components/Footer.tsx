@@ -49,24 +49,24 @@ const Footer = () => {
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
       >
         <div className="bg-[#098CE9] w-full py-3 pb-6 flex flex-col justify-center items-center gap-3">
-          <div className="font-bold text-6xl text-center text-white flex justify-center items-center w-full mt-[1rem]">
+          <div className="font-bold text-2xl md:text-4xl xl:text-6xl text-center text-white flex justify-center items-center w-full mt-[1rem]">
             We are Launching Soon!
           </div>
-          <div className="text-center text-sm text-white">
+          <div className="text-center text-xs md:text-sm text-white">
             <p> Experience Our Revolutionary Healthcare Platform </p>
             <p> All at no cost to you! </p>
           </div>
-          <div className="h-[49px] border mt-[1rem] flex rounded-l-xl rounded-r-xl ">
+          <div className="h-[32px] md:h-[48px] border mt-[1rem] flex rounded-l-[8px] md:rounded-l-xl rounded-r-[8px] md:rounded-r-xl ">
             <input
               type="email"
               name=""
               id=""
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Your email address"
-              className="sm:w-[239px] h-full rounded-l-xl text-[#484848] indent-3 focus:outline-none"
+              className="w-[130px] sm:w-[239px] h-full rounded-l-[8px] md:rounded-l-xl text-xs md:text-base text-[#484848] indent-3 focus:outline-none"
             />
             <button
-              className="px-5 h-full text-white font-medium rounded-r-xl hover:bg-[#0A74C8]"
+              className="px-3 md:px-5 h-full text-white text-xs md:text-base md:font-medium rounded-r-[8px] md:rounded-r-xl hover:bg-[#0A74C8]"
               disabled={disabled}
               onClick={handleSubmit}
             >
