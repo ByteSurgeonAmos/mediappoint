@@ -39,7 +39,7 @@ function Header() {
           <Button text="Join Now " handleScrollToView={handleJoinNowClick} />
         </div>
       </div>
-      <div className="absolute top-20 w-full h-[12px] flex justify-center items-center">
+      <div className="absolute top-16 w-full h-[12px] flex justify-center items-center">
         <TooltipProvider>
           <Tooltip>
             <div className="w-[25px] h-[10px] flex justify-between">
