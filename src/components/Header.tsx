@@ -1,3 +1,4 @@
+// components/ui/Header.tsx
 "use client";
 import Image from "next/image";
 import Button from "./Button";
@@ -16,7 +17,7 @@ function Header() {
     document.getElementById("footer1")?.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div className="pb-[2rem] header-bg-opacity text-xs bg-cover bg-center pt-2 bg-black-opacity-10 flex flex-col gap-6 max-md:w-screen">
+    <div className="header-bg-opacity text-xs bg-cover bg-center pt-2 bg-black-opacity-10 flex flex-col gap-6 max-md:w-screen">
       <div className="flex items-center justify-between h-fit mx-1 md:mx-2 lg:mx-4">
         <div className="h-full mt-3 ml-1 md:ml-2 lg:ml-4">
           <Image
@@ -66,7 +67,7 @@ function Header() {
       <div className="w-full max-md:w-screen">
         <div className="w-full h-max center flex flex-col justify-center items-center max-md:w-screen">
           <div className="w-full h-max text-white text-balance text-center font-bold pt-4 max-md:w-screen">
-            <p className="text-xl sm:text-2xl md:text-4xl xl:text-6xl">Schedule your next Appointment 
+            <p className="text-2xl sm:text-4xl xl:text-6xl">Schedule your next Appointment 
               <br/>
               Hassle free
             </p>
@@ -89,7 +90,7 @@ function Header() {
       <div className="w-full max-md:w-screen">
         <div className="w-full h-max center flex flex-col justify-center items-center max-md:w-screen">
           <div className="w-full h-max text-white text-balance text-center font-bold pt-4 max-md:w-screen">
-            <p className="text-xl sm:text-2xl md:text-4xl xl:text-6xl">
+            <p className="text-2xl sm:text-4xl xl:text-6xl">
               Easy as 1-2-3
             </p>
           </div>

@@ -1,3 +1,4 @@
+// components/provider/Header.tsx
 "use client";
 import Image from "next/image";
 import Button from "../Button";
@@ -17,7 +18,7 @@ function Header() {
   };
 
   return (
-    <div className="pb-[2rem] header-bg-opacity bg-cover bg-center header bg-black-opacity-10 flex flex-col gap-8  max-md:w-screen">
+    <div className="header-bg-opacity text-xs bg-cover bg-center pt-2 bg-black-opacity-10 flex flex-col gap-6 max-md:w-screen">
       <div className="flex items-center justify-between h-fit mx-4">
         <div className="h-full mt-4 ml-4">
           <Image
