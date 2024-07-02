@@ -33,7 +33,7 @@ const HowItWorks = () => {
                 <Image src={feature.src} alt={feature.alt} width={100} height={150} />
               </div>
               <div className="font-bold text-base lg:text-xl text-[#242424] w-full ">{feature.title}</div>
-              <div className="text-center text-xs lg:text-base text-[#484848] lg:pt-2 sm:w-1/2 lg:w-full">{feature.description}</div>
+              <div className="text-center text-xs lg:text-base text-[#484848] lg:pt-2 h-10 sm:w-1/2 lg:w-full">{feature.description}</div>
             </div>
           ))}
         </div>
