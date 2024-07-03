@@ -33,7 +33,7 @@ function Header() {
             className=" text-white text-xs sm:text-sm md:text-base font-semibold lg:font-bold"
             onClick={() => router.push("/provider")}
           >
-            For Health Practitioners
+            For Medical Practitioners
           </button>
             <Button text="Join Now " handleScrollToView={handleJoinNowClick} />
         </div>
