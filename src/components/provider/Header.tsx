@@ -69,9 +69,10 @@ function Header() {
       <div className="w-full max-md:w-screen">
         <div className="w-full h-max center flex flex-col justify-center items-center max-md:w-screen">
           <div className="w-full h-max text-white text-balance text-center font-bold pt-4 max-md:w-screen">
-            <p className="text-2xl sm:text-4xl xl:text-6xl">Grow Your Pracitce with 
-            <br/>
-            Med-Appoint
+            <p className="text-2xl sm:text-4xl xl:text-6xl">
+              Grow Your Practice with
+              <br />
+              Med-Appoint
             </p>
           </div>
           <div className="w-[713px] xl:text-lg font-400 text-center text-white max-md:w-screen pt-2">
@@ -92,13 +93,12 @@ function Header() {
       <div className="w-full max-md:w-screen">
         <div className="w-full h-max center flex flex-col justify-center items-center max-md:w-screen">
           <div className="w-full h-max text-white text-balance text-center font-bold pt-4 max-md:w-screen">
-            <p className="text-2xl sm:text-4xl xl:text-6xl">
-              Key Features
-            </p>
+            <p className="text-2xl sm:text-4xl xl:text-6xl">Key Features</p>
           </div>
           <div className="w-[713px] xl:text-lg font-400 text-center text-white max-md:w-screen pt-2">
             Med Appoint makes it easier for patients to,
-            <br/>Find and Book appointments with you. 
+            <br />
+            Find and book appointments with you.
           </div>
         </div>
       </div>

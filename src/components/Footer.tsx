@@ -50,10 +50,10 @@ const Footer = () => {
       >
         <div className="bg-[#098CE9] w-full py-3 pb-6 flex flex-col justify-center items-center gap-3">
           <div className="font-bold text-2xl sm:text-4xl xl:text-6xl text-center text-white flex justify-center items-center w-full mt-[1rem]">
-            We are Launching Soon!
+            We Are Launching Soon!
           </div>
           <div className="text-center text-xs md:text-sm text-white">
-            <p> Experience Our Revolutionary Healthcare Platform </p>
+            <p> Experience our revolutionary healthcare platform </p>
             <p> All at no cost to you! </p>
           </div>
           <div className="h-[32px] md:h-[40px] lg:h-[48px] border mt-[1rem] flex rounded-l-[8px] md:rounded-l-xl rounded-r-[8px] md:rounded-r-xl ">
@@ -88,7 +88,9 @@ const Footer = () => {
               Product Survey!
             </div>
             <div className="text-center text-xs md:text-sm text-white">
-              <p className="font-semibold sm:font-bold text-base sm:text-xl mb-1">We Value Your Feedback! </p>
+              <p className="font-semibold sm:font-bold text-base sm:text-xl mb-1">
+                We Value Your Feedback!{" "}
+              </p>
               <p>Please take a few minutes to complete our product survey.</p>
               <p>Your insights will help us tailor our solutions </p>
               <p>To better meet your needs.</p>

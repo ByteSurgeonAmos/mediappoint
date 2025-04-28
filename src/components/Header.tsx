@@ -1,4 +1,3 @@
-// components/ui/Header.tsx
 "use client";
 import Image from "next/image";
 import Button from "./Button";
@@ -35,7 +34,7 @@ function Header() {
           >
             For Medical Practitioners
           </button>
-            <Button text="Join Now " handleScrollToView={handleJoinNowClick} />
+          <Button text="Join Now " handleScrollToView={handleJoinNowClick} />
         </div>
       </div>
       <div className="absolute top-16 w-full h-[12px] flex justify-center items-center">
@@ -67,13 +66,14 @@ function Header() {
       <div className="w-full max-md:w-screen">
         <div className="w-full h-max center flex flex-col justify-center items-center max-md:w-screen">
           <div className="w-full h-max text-white text-balance text-center font-bold pt-4 max-md:w-screen">
-            <p className="text-2xl sm:text-4xl xl:text-6xl">Schedule your next Appointment 
-              <br/>
+            <p className="text-2xl sm:text-4xl xl:text-6xl">
+              Schedule your next Appointment
+              <br />
               Hassle free
             </p>
           </div>
           <div className="w-[713px] xl:text-lg font-400 text-center text-white max-md:w-screen pt-2">
-            Find and Book your favorite Healthcare Professional near you
+            Find and book your favorite healthcare professional near you.
           </div>
         </div>
       </div>
@@ -90,14 +90,13 @@ function Header() {
       <div className="w-full max-md:w-screen">
         <div className="w-full h-max center flex flex-col justify-center items-center max-md:w-screen">
           <div className="w-full h-max text-white text-balance text-center font-bold pt-4 max-md:w-screen">
-            <p className="text-2xl sm:text-4xl xl:text-6xl">
-              Easy as 1-2-3
-            </p>
+            <p className="text-2xl sm:text-4xl xl:text-6xl">Easy as 1-2-3</p>
           </div>
           <div className="w-[713px] xl:text-lg font-400 text-center text-white max-md:w-screen pt-2">
             Discover, book and experience personalized healthcare effortlessly
-            with our 
-            <br/>User-friendly Doctor Appointment Website
+            with our
+            <br />
+            User-friendly doctor appointment website.
           </div>
         </div>
       </div>
